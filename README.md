@@ -8,7 +8,34 @@ Farming bot for Dofus game.
 
 ![screenshot](screenshot.gif)
 
-### Important Notes
+## Installation
+
+First, you need to install some dependencies using one of the following commands:
+
+**Debian & derivatives:**
+```bash
+sudo apt install python-gi gir1.2-gtk-3.0 gir1.2-wnck-3.0 python-xlib python-pil
+```
+
+**Arch Linux & derivatives:**
+```bash
+sudo pacman -S python-gobject python-xlib python-pillow
+```
+
+To run the bot:
+```bash
+cd /path/to/bot
+python bot.py
+```
+
+To run the bot in developer mode (brings some additional features):
+```bash
+python bot.py --dev
+```
+
+**Note:** you can also run the bot from the [desktop file](dindo-bot.desktop).
+
+## To Know
 
 - Dindo bot use screen pixels to interact with the game client, so it's not a socket bot or even not a MITM bot.
 - Is it detectable by the Anti-bot?
